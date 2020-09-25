@@ -1,19 +1,17 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import { Cards, Chart, CountryPicker } from "./components";
+import styles from "./App.module.css";
 
-function App() {
-  return (
-    <div className="App">
-        <h1>App ideas here</h1>
-        <ol>
-          <li>Mobile app of some kind</li>
-          <li>Geolocation app</li>
-          <li>Instagram clone</li>
-          <li></li>
-          <li></li>
-        </ol>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className={styles.container}>
+        <Cards />
+        <CountryPicker />
+        <Chart />
+      </div>
+    );
+  }
 }
 
 export default App;
